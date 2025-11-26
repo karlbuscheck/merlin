@@ -4,9 +4,7 @@ Merlin is a what-if engine for predicting YouTube video performance *before* an 
 
 ## Problem & Context
 
-Performing well on YouTube often comes down to fast, high-leverage decisions: the title, the episode length, and when the video is released. A daily sports show makes these choices every single day, but until now, it had no consistent way to understand how different options might impact performance.
-
-Merlin provides a lightweight forecasting layer that lets creators test ideas *before* the episode goes live. By comparing alternate titles and structural choices in seconds, the team can estimate which version is most likely to drive long-term engagement and make decisions based on data — not guesswork.
+Most YouTube decisions — title, length, timing — happen before a video goes live, yet creators have no way to A/B test options in advance. Merlin provides a lightweight forecasting layer that predicts views and subscriber change from simple inputs, enabling quick, real-time comparisons before publishing.
 
 ## Technical Highlights
 
