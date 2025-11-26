@@ -75,11 +75,5 @@ Merlin will output predicted lifetime views and predicted subscriber change.
 - **Integrate thumbnail embeddings**  
   Add vision features using ViT or CLIP to incorporate thumbnail quality into forecasts.
 
-- **RAG-powered versioning (Merlin v2)**  
+- **RAG-powered versioning (Merlin v1)**  
   Use Retrieval-Augmented Generation to analyze historical show notes, metadata, and title styles.
-
-
-
-
-
-
