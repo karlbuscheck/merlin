@@ -16,7 +16,7 @@ Most YouTube decisions — title, length, timing — happen before a video goes 
 **Log-transform rescue for views**
 - Lifetime views were highly skewed, making raw-target modeling unstable  
 - Switching to a `log1p` target gave the model a learnable signal and improved generalization on high-variance episodes  
-- After reversing with `expm1`, the model achieved a **~377-view median absolute error** on held-out episodes—turning a noisy baseline into a practical forecasting tool  
+- After reversing with `expm1`, the model achieved a **~377-view median absolute error** on held-out episodes — turning a noisy baseline into a practical forecasting tool  
 
 **Robust subscriber modeling**
 - Subscriber change includes negative dips, flat outcomes, and rare spikes  
