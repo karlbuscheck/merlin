@@ -53,12 +53,10 @@ merlin/
 ## How to Run Merlin v0 in Colab
 
 1. Open the notebook: `notebooks/05_merlin_console.ipynb`
-2. Scroll directly to the bottom cell; Note: You do NOT need to re-run the whole notebook
-
-3. Run this cell:
+2. Run all cells once to mount Drive, load the trained boosters, and define the helper functions. The final cell lauches the interactive console:
    `run_merlin_console()`
 
-4. When prompted, enter:
+3. When prompted, enter:
    - title  
    - episode length (minutes)  
    - day of week  
