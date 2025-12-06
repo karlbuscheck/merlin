@@ -1,4 +1,4 @@
-# Merlin 🧙‍♂️ v0 — What-If Engine for YouTube Creators
+# Merlin v0 — What-If Engine for YouTube Creators
 
 Merlin is a what-if engine for predicting YouTube video performance *before* an episode goes live. Originally built for a daily sports show, it helps creators compare alternate title ideas and structural choices using real data instead of instinct. The model predicts each episode’s **lifetime views** and **subscriber change** from its **title**, **episode length**, and lightweight metadata (day-of-week, month).
 
