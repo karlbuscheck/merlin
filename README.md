@@ -75,5 +75,7 @@ Merlin will output predicted lifetime views and predicted subscriber change.
 - **Integrate thumbnail embeddings**  
   Add vision features using ViT or CLIP to incorporate thumbnail quality into forecasts.
 
-- **RAG-powered versioning (Merlin v1)**  
+- **RAG-powered versioning**  
   Use Retrieval-Augmented Generation to analyze historical show notes, metadata, and title styles.
+
+The Streamlit deployment will mark Merlin v1, the first fully interactive version of the tool. Adding thumbnail embeddings becomes v1.5, bringing Merlin into multimodal forecasting. And the RAG-powered system is v2, where Merlin starts to understand long-term creator patterns, not just a single title.
