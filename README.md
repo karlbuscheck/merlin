@@ -13,7 +13,7 @@ Most YouTube decisions — title, length, timing — happen before a video goes 
 **Hybrid model architecture**
 - Title embeddings generated with the `all-MiniLM-L6-v2` sentence-transformer  
 - XGBoost regressors for predicting lifetime views and subscriber change  
-- Feature set includes title embeddings, episode length, day-of-week, month, and show-level metadata  
+- Feature set includes title embeddings, episode length, day-of-week, and month.
 
 **Log-transform rescue for views**
 - Lifetime views were highly skewed, making raw-target modeling unstable  
