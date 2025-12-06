@@ -59,7 +59,7 @@ with st.spinner("Loading models..."):
 # 3. USER INPUTS
 # -----------------------------------------------------------------------------
 with st.form("prediction_form"):
-    title = st.text_input("Video Title", value="How to build a SaaS in 2 weeks")
+    title = st.text_input("Video Title", value="How the 49ers can win the Super Bowl in Santa Clara")
     
     col1, col2, col3 = st.columns(3)
     
