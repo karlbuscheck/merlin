@@ -21,13 +21,13 @@ Most YouTube decisions — title, length, timing — happen before a video goes 
 - Get **predicted lifetime views** and **predicted subscriber change**
 - Quickly test alternate titles and runtimes for the same episode
 
-<img width="860" height="540" alt="Screenshot 2025-12-08 at 1 28 10 PM" src="https://github.com/user-attachments/assets/6eebd1da-b914-4b79-895c-617ce61a4530" />
-
 Under the hood, Merlin v1 uses:
 
-- The `all-MiniLM-L6-v2`  sentence-transformer to embed titles
+- The `all-MiniLM-L6-v2` sentence-transformer to embed titles
 - **XGBoost regressors** to predict views and subscriber change
 - A lightweight **Streamlit** front-end deployed on Streamlit Cloud
+
+<img width="860" height="540" alt="Screenshot 2025-12-08 at 1 28 10 PM" src="https://github.com/user-attachments/assets/6eebd1da-b914-4b79-895c-617ce61a4530" />
 
 ## Technical Highlights
 
@@ -49,7 +49,7 @@ Under the hood, Merlin v1 uses:
 **Reproducible pipeline**
 - Training workflow is split across clear notebooks: data prep → embedding generation → model training → artifact serialization  
 - Inference is fully decoupled: Notebook 05 loads all saved models, feature schemas, and metadata to deliver fast predictions  
-- Merlin Console offers a simple, interactive prompt-based interface for real-time what-if analysis
+- The Streamlit Web App offers a simple, interactive prompt-based interface for real-time what-if analysis
 
 ## Project Structure
 
