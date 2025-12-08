@@ -78,10 +78,12 @@ merlin/
 *Note: The Streamlit app (`app.py`) powers Merlin v1.  
 The notebook console (`05_merlin_console.ipynb`) is the original v0 interface.*
 
-## How to Run Merlin v0 in Colab
+## Running Merlin v0 (Legacy Notebook Console)
+
+Merling v0 is the original interactive Colab-based console used during development. It remains included for transparency and reproducibility, and for anyone who wants to inspect or recreate the full notebook-based workflow.
 
 1. Open the notebook: `notebooks/05_merlin_console.ipynb`
-2. Run all cells once to mount Drive, load the trained boosters, and define the helper functions. The final cell lauches the interactive console:
+2. Run all cells once to mount Drive, load the trained boosters, and define the helper functions. The final cell launches the interactive console:
    `run_merlin_console()`
 
 3. When prompted, enter:
@@ -93,15 +95,22 @@ The notebook console (`05_merlin_console.ipynb`) is the original v0 interface.*
 Merlin will output predicted lifetime views and predicted subscriber change.
 <img width="1129" height="487" alt="Screenshot 2025-11-25 at 10 27 41 PM" src="https://github.com/user-attachments/assets/b5660efd-ac76-40e4-a9ab-9cfa25cb5e5e" />
 
-## Next Steps
+## Project History & Roadmap
 
-- **Deploy to Streamlit Cloud**  
-  Turn Merlin into an interactive web app so creators can run real-time A/B tests.
+### **v0 — Notebook Prototype**
+- Built as an interactive Colab console (`05_merlin_console.ipynb`)
+- Demonstrated end-to-end ML workflow: data prep → embeddings → training → inference
+- Provided the first version of Merlin’s forecasting logic
 
-- **Integrate thumbnail embeddings**  
-  Add vision features using ViT or CLIP to incorporate thumbnail quality into forecasts.
+### **v1 — Streamlit Web App (Current Version)**
+- Fully interactive web interface (`app.py`)
+- Real-time what-if testing for titles, runtimes, and scheduling
+- Deployed on Streamlit Cloud with fast, lightweight inference
 
-- **RAG-powered versioning**  
-  Use Retrieval-Augmented Generation to analyze historical show notes, metadata, and title styles.
+### **v1.5 — Thumbnail Embeddings (Planned)**
+- Add multimodal inputs using CLIP or ViT
+- Improve prediction accuracy by incorporating thumbnail quality
 
-The Streamlit deployment will mark Merlin v1, the first fully interactive version of the tool. Adding thumbnail embeddings becomes v1.5, bringing Merlin into multimodal forecasting. And the RAG-powered system is v2, where Merlin starts to understand long-term creator patterns, not just a single title.
+### **v2 — RAG-Powered Creator Modeling (Future)**
+- Retrieval-Augmented Generation on show notes, metadata, past episodes
+- Train Merlin to understand long-term patterns, not just one title at a time
