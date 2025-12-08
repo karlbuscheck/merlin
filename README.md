@@ -56,6 +56,8 @@ Under the hood, Merlin v1 uses:
 ```text
 merlin/
 ├── README.md
+├── app.py                     # Streamlit app for Merlin v1
+├── requirements.txt           # Dependencies for Streamlit Cloud
 ├── models/
 │   ├── xgb_views_booster.json
 │   ├── xgb_subs_model.pkl
@@ -73,6 +75,9 @@ merlin/
 └── data/
     └── (raw + processed CSVs used in training)
 ```
+*Note: The Streamlit app (`app.py`) powers Merlin v1.  
+The notebook console (`05_merlin_console.ipynb`) is the original v0 interface.*
+
 ## How to Run Merlin v0 in Colab
 
 1. Open the notebook: `notebooks/05_merlin_console.ipynb`
