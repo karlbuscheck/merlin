@@ -25,7 +25,7 @@ Most YouTube decisions — title, length, timing — happen before a video goes 
 
 Under the hood, Merlin v1 uses:
 
-- A **MiniLM sentence transformer** to embed titles
+- The `all-MiniLM-L6-v2`  sentence-transformer to embed titles
 - **XGBoost regressors** to predict views and subscriber change
 - A lightweight **Streamlit** front-end deployed on Streamlit Cloud
 
