@@ -1,4 +1,27 @@
-# Merlin v0 — What-If Engine for YouTube Creators
+# Merlin — What-If Engine for YouTube Creators
+
+Merlin is a forecasting engine that predicts YouTube video performance **before** an episode goes live. It takes a title, episode length, and simple scheduling metadata (day of week, month) and returns **predicted lifetime views and subscriber change**, so creators can A/B test ideas with real data instead of gut feel.
+
+## Live Demo — Merlin v1 (Streamlit Web App)
+
+**Try Merlin in your browser:**
+[Open the Merlin v1 app](https://merlin-mzuorffplqskcrvhe2dkds.streamlit.app/)
+
+*Note: If the app has been idle, Streamlit may show a brief “waking up” / “in the oven” screen while it starts the container. Wait a few seconds, and the interface will load.*
+
+**What you can do in v1:**
+
+- Enter a **video title**, **duration**, **day of week**, and **month**
+- Get **predicted lifetime views** and **predicted subscriber change**
+- Quickly test alternate titles and runtimes for the same episode
+
+Under the hood, Merlin v1 uses:
+
+- A **MiniLM sentence transformer** to embed titles
+- **XGBoost regressors** to predict views and subscriber change
+- A lightweight **Streamlit** front-end deployed on Streamlit Cloud
+
+# Merlin v0 (Notebook Prototype)
 
 Merlin is a what-if engine for predicting YouTube video performance *before* an episode goes live. Originally built for a daily sports show, it helps creators compare alternate title ideas and structural choices using real data instead of instinct. The model predicts each episode’s **lifetime views** and **subscriber change** from its **title**, **episode length**, and lightweight metadata (day-of-week, month).
 
