@@ -15,6 +15,8 @@ Merlin is a forecasting engine that predicts YouTube video performance **before*
 - Get **predicted lifetime views** and **predicted subscriber change**
 - Quickly test alternate titles and runtimes for the same episode
 
+<img width="860" height="540" alt="Screenshot 2025-12-08 at 1 28 10 PM" src="https://github.com/user-attachments/assets/6eebd1da-b914-4b79-895c-617ce61a4530" />
+
 Under the hood, Merlin v1 uses:
 
 - A **MiniLM sentence transformer** to embed titles
